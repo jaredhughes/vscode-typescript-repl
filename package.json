@@ -1,0 +1,21 @@
+{
+  "name": "ts_generics_examples",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/jaredhughes/ts_generics_examples.git",
+  "author": "Jared Hughes <j@redhugh.es>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "rm -rf dist",
+    "start": "nodemon --inspect=5858 -e ts,tsx --exec node -r ts-node/register ./src/index.ts"
+  },
+  "dependencies": {
+    "@octokit/rest": "^16.28.9",
+    "@types/node": "^12.7.4",
+    "nodemon": "^1.19.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  },
+  "devDependencies": {}
+}
